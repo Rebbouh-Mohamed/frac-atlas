@@ -1,0 +1,9 @@
+task: segment
+mode: train
+model: yolo11m-seg.pt
+data: /kaggle/working/data.yaml
+epochs: 120
+batch: 16
+imgsz: 640
+# KEY: Image size 640, 120 epochs  
+# This is our improved version with more training

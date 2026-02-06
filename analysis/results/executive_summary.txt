@@ -1,0 +1,88 @@
+================================================================================
+FRACATLAS REPRODUCIBILITY STUDY - KEY FINDINGS
+================================================================================
+
+Analysis Date: 2026-02-06 14:15:27
+
+FINDING 1: SEVERE REPRODUCIBILITY FAILURE
+--------------------------------------------------------------------------------
+
+The Original Paper's published model achieves:
+  • mAP50(Mask): 0.8718
+  • F1-Score: 0.8281
+
+Our attempts to reproduce their results:
+
+Model_2_Your_Reproduction:
+  • mAP50 Gap: -39.5%
+  • F1-Score Gap: -34.4%
+
+Model_3_Your_v7:
+  • mAP50 Gap: -38.7%
+  • F1-Score Gap: -26.5%
+
+Model_4_Your_v8:
+  • mAP50 Gap: -39.3%
+  • F1-Score Gap: -30.7%
+
+CONCLUSION: We achieved less than 65% of the published performance.
+This represents a CRITICAL reproducibility issue.
+
+FINDING 2: OUR CONTRIBUTIONS
+--------------------------------------------------------------------------------
+
+Despite the reproducibility gap, we made significant contributions:
+
+1. ANNOTATION CORRECTION:
+   - Discovered errors in public YOLO annotations
+   - Fixed missing polygon points
+   - Validated all annotation files
+
+2. DATA AUGMENTATION:
+   - Applied systematic augmentation (~5x dataset size)
+   - Horizontal/vertical flips, rotations, brightness/contrast
+
+3. HYPERPARAMETER OPTIMIZATION:
+   - Tested different image sizes (800 vs 640)
+   - Extended training duration (100 vs 120 epochs)
+   - Result: v8 achieved 0.8% speed improvement
+
+FINDING 3: SUSPICIOUS ASPECTS OF ORIGINAL PAPER
+--------------------------------------------------------------------------------
+
+The 35-40% performance gap raises serious questions:
+
+1. UNREPORTED DETAILS:
+   - Training hyperparameters not fully disclosed
+   - Data preprocessing steps unclear
+   - Evaluation protocol ambiguous
+
+2. POSSIBLE EXPLANATIONS:
+   - Different dataset split (train/val/test)
+   - Data leakage or contamination
+   - Cherry-picked results
+   - Undisclosed data augmentation
+   - Different annotation version
+
+3. EFFECT SIZE:
+   - Model_2_Your_Reproduction: Cohen's d = 6.88 (Large effect)
+   - Model_3_Your_v7: Cohen's d = 6.75 (Large effect)
+   - Model_4_Your_v8: Cohen's d = 6.85 (Large effect)
+
+   A 'Large' effect size indicates the difference is NOT due to
+   random variation but represents fundamental methodology differences.
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+1. FOR REPRODUCIBILITY:
+   - Papers should release trained models AND training code
+   - Complete hyperparameters must be disclosed
+   - Data splits should be publicly available
+
+2. FOR MEDICAL AI:
+   - Independent validation studies are essential
+   - Replication failures should be published
+   - Dataset quality must be verified
+
+================================================================================

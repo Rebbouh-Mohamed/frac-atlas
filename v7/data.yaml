@@ -1,0 +1,7 @@
+names:
+- fracture
+nc: 1
+path: /kaggle/working/data
+test: test/images
+train: train/images
+val: valid/images

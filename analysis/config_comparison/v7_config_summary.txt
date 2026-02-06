@@ -1,0 +1,9 @@
+task: segment
+mode: train
+model: yolo11m-seg.pt
+data: /kaggle/working/data.yaml
+epochs: 100
+batch: 16
+imgsz: 800
+# KEY: Image size 800, 100 epochs
+# This is our reproduction attempt

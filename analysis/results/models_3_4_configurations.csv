@@ -1,0 +1,3 @@
+Model,Architecture,Image_Size,Epochs,Description
+Model_3_Your_v7,YOLO11m-seg,800,100,Your enhanced model with corrections + augmentation
+Model_4_Your_v8,YOLO11m-seg,640,120,Your optimized model with extended training
