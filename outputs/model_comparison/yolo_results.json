@@ -1,0 +1,13 @@
+{
+  "Model": "YOLO Segmentation",
+  "Architecture": "YOLOv8",
+  "Timestamp": "2026-02-11 23:04:49",
+  "Precision(Mask)": 0.9460389840292658,
+  "Recall(Mask)": 0.7362637362637363,
+  "mAP50(Mask)": 0.8741214212386726,
+  "mAP50-95(Mask)": 0.477363755326064,
+  "Fitness": 1.0133225041155236,
+  "F1-Score(Mask)": 0.8280723660854842,
+  "Dice_Coefficient": 0.8280723660854842,
+  "Speed_Inference(ms)": 486.0454802195286
+}

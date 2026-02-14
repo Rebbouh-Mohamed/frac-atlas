@@ -16,3 +16,5 @@ Untitled-1.json
 
 kaggle_api.py
 fracture_segmentation_yolov11.ipynb
+results-unet/
+runs/models/best_model.pth

@@ -1,0 +1,16 @@
+{
+  "Model": "UNet++ Segmentation",
+  "Architecture": "UNet++ (EfficientNet-B5)",
+  "Timestamp": "2026-02-11 23:09:22",
+  "Precision(Mask)": 0.6001603626387976,
+  "Recall(Mask)": 0.6086002167979591,
+  "Dice_Coefficient": 0.5830609258517128,
+  "F1-Score(Mask)": 0.5830609258517128,
+  "mAP50(Mask)": 0.4728113820932628,
+  "mAP50-95(Mask)": 0.4728113820932628,
+  "Speed_Inference(ms)": 3280.93915893918,
+  "Dice_Std": 0.3150467393555146,
+  "IoU_Mean": 0.4728113820932628,
+  "IoU_Std": 0.2788001391264221,
+  "Num_Test_Images": 82
+}
